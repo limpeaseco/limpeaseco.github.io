@@ -44,9 +44,7 @@ const Home = () => {
 
       <S.Servicos>
         {servicos.map((servico) => (
-          <Card key={servico.id} style={{
-            width: "30vw"
-          }}>
+          <S.CardStyled key={servico.id}>
             <CardActionArea>
               <CardMedia
                 style={{
@@ -64,7 +62,7 @@ const Home = () => {
                 </Typography>
               </CardContent>
             </CardActionArea>
-          </Card>
+          </S.CardStyled>
         ))}
       </S.Servicos>
 

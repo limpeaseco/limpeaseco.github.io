@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Card } from "@material-ui/core"
 
 export const ImgWrapper = styled.div`
   margin: 4vh auto;
@@ -54,4 +55,17 @@ export const Servicos = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 3vw 4vh;
+
+  @media screen and (max-width: 1400px){
+    flex-direction: column;
+    margin: 0 10vw 4vh;
+  }
+`
+
+export const CardStyled = styled(Card)`
+  width: 30vw;
+  @media screen and (max-width: 1400px){
+    width: 80vw;
+    margin-bottom: 2vh;
+  }
 `

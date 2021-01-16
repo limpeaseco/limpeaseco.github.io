@@ -1,5 +1,5 @@
 // import { useDispatch, useSelector } from "react-redux"
-import { AppBar, Toolbar, Button } from "@material-ui/core";
+import { AppBar, Toolbar, Button, Typography } from "@material-ui/core";
 // import SearchIcon from "@material-ui/icons/Search";
 import * as S from "./styles";
 import logo from "../../assets/images/logo2.png";
@@ -26,8 +26,11 @@ const NavBar = ({ page }) => {
             // value={inputSearch || ""}
             // onChange={onChangeInput}
           />
-        </S.Search>
-        <S.Space /> */}
+        </S.Search> */}
+        <Typography variant="h6" component="h2" align="center" onClick={() => window.open('https://web.whatsapp.com/send?phone=+5527995312828', '_blank')} style={{ cursor: "pointer"}}>
+          (27) 99531-2828
+        </Typography>
+        <S.Space />
         <div>
           {page === "home" ? (
             <Button variant="contained" component={Link} to="/contato">
