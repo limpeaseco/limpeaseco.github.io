@@ -23,7 +23,7 @@ export const servicos = [
     id: 1,
     titulo: "HIGIENIZAÇÃO DE ESTOFADOS",
     texto:
-      "É o procedimento realizado nos estofados através de uma limpeza profunda contendo produtos bactericidas, antiacaros, alvejante e sempre deixando um aroma agradável e proporcionando mais saúde e conforto.",
+      "É o procedimento realizado nos estofados através de uma limpeza profunda contendo produtos bactericidas, antiácaros , alvejante e sempre deixando um aroma agradável e proporcionando mais saúde e conforto.",
     texto2: "Sofá, colchão, cadeira, poltrona, puff, cabeceira, recamier, pelúcia, bebê conforto, cadeirinha infantil, e muito mais.",
     palavrasChave: ["pufe", "colxão", "limpeza", "lavagem"],
     imgWeb: sofa,
@@ -48,7 +48,7 @@ export const servicos = [
     id: 4,
     titulo: "LAVAGEM DE CORTINA",
     texto:
-      "Recolhemos sua cortina na sua casa com horário agendado, levamos para nossa lavanderia e fazemos todo procedimento sanitizante eliminando ácaros e bactérias. Depois agendamos a entrega, limpamos os trilhos e fazemos a instalação deixando o ambiente mais limpo,saudavel e cheiroso.",
+      "Recolhemos sua cortina na sua casa com horário agendado, levamos para nossa lavanderia e fazemos todo procedimento sanitizante eliminando ácaros e bactérias. Depois agendamos a entrega, limpamos os trilhos e fazemos a instalação, deixando o ambiente mais limpo, saudável e cheiroso.",
     palavrasChave: ["persiana", "blackout", "trilho", "black"],
     imgWeb: cortina,
   },
