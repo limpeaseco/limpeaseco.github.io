@@ -17,12 +17,12 @@ export const FooterWrapper = styled.footer`
 
   .logoWrapper {
     height: 8vh;
-    img {
-      height: 100%;
-    }
-
     @media screen and (max-width: 1000px) {
       height: 10vh;
+    }
+    
+    img {
+      height: 100%;
     }
   }
 
