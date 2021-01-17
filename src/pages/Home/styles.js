@@ -12,7 +12,8 @@ export const ImgWrapper = styled.div`
     width: 70%;
   }
   @media screen and (max-width: 1200px) {
-    width: 80%;
+    width: 90%;
+    margin: 3vh auto;
   }
 
   img {
@@ -39,6 +40,9 @@ export const ImgWrapper = styled.div`
     @media screen and (max-width: 1200px) {
       top: 30px;
     }
+    @media screen and (max-width: 600px) {
+      top: 10px;
+    }
 
     .MuiTypography-h3 {
       font-weight: 600;
@@ -52,6 +56,9 @@ export const ImgWrapper = styled.div`
         font-size: 1.2rem;
         font-weight: 600;
       }
+      @media screen and (max-width: 600px) {
+        font-size: 1rem;
+      }
     }
   }
 `;
@@ -60,7 +67,11 @@ export const RecallWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 10vw 6vh;
+  background-color: rgba(155, 155, 155, 0.5);
+  padding: 3vh 10vw;
+  margin-bottom: 4vh;
+
+
   @media screen and (max-width: 1000px) {
     flex-direction: column;
   }
@@ -98,13 +109,12 @@ export const RecallWrapper = styled.div`
 
 export const Servicos = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 3vw 4vh;
-
-  @media screen and (max-width: 1400px) {
-    flex-direction: column;
     margin: 0 10vw 4vh;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
   }
 `;
 

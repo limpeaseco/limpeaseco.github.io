@@ -1,10 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import {
-  Typography,
-  Box,
-  Button,
-} from "@material-ui/core";
+import { Typography, Box, Button } from "@material-ui/core";
 import * as S from "./styles";
 
 import principal from "../../assets/images/living-room-2569325_1280.jpg";
@@ -16,6 +12,7 @@ import { setInputSearch } from "../../redux/actions";
 
 import NavBar from "../../components/NavBar";
 import Servico from "../../components/Servico";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -28,11 +25,21 @@ const Home = () => {
       .replace(/[\u0300-\u036f]/g, "");
 
   const result = inputSearch
-    ? servicos.filter(
-        (servico) =>
-          formatString(servico?.titulo)?.includes(formatString(inputSearch)) ||
-          formatString(servico?.texto)?.includes(formatString(inputSearch))
-      )
+    ? servicos.filter((servico) => {
+        const titulo = formatString(servico?.titulo)?.includes(
+          formatString(inputSearch)
+        );
+        const texto = formatString(servico?.texto)?.includes(
+          formatString(inputSearch)
+        );
+        const texto2 = formatString(servico?.texto2)?.includes(
+          formatString(inputSearch)
+        );
+        const palavras = servico.palavrasChave.filter((item) =>
+          formatString(item)?.includes(formatString(inputSearch))
+        );
+        return titulo || texto || texto2 || palavras[0];
+      })
     : [];
 
   const newSearchButton = (
@@ -78,12 +85,6 @@ const Home = () => {
             </div>
           </S.ImgWrapper>
 
-          <S.Servicos>
-            {servicos.map((servico) => (
-              <Servico servico={servico} />
-            ))}
-          </S.Servicos>
-
           <S.RecallWrapper>
             <div className="imgWrapper">
               <img alt="recall" src={recall} />
@@ -110,6 +111,12 @@ const Home = () => {
               </Typography>
             </div>
           </S.RecallWrapper>
+
+          <S.Servicos>
+            {servicos.map((servico) => (
+              <Servico servico={servico} />
+            ))}
+          </S.Servicos>
         </>
       ) : result.length === 0 ? (
         <Box m={4}>
@@ -118,17 +125,16 @@ const Home = () => {
         </Box>
       ) : (
         <>
-          <Box m={4}>
-           {newSearchButton}
-
-          </Box>
-           <S.Servicos>
+          <Box m={4}>{newSearchButton}</Box>
+          <S.Servicos>
             {result.map((servico) => (
               <Servico servico={servico} />
             ))}
-           </S.Servicos>
+          </S.Servicos>
         </>
       )}
+
+      <Footer />
     </>
   );
 };
