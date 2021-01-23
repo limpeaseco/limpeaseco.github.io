@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/static/js/main.5e231285.chunk.js",
-    "main.js.map": "/static/js/main.5e231285.chunk.js.map",
+    "main.js": "/static/js/main.977196e0.chunk.js",
+    "main.js.map": "/static/js/main.977196e0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5258a62f.js",
     "runtime-main.js.map": "/static/js/runtime-main.5258a62f.js.map",
     "static/js/2.8b3e89fa.chunk.js": "/static/js/2.8b3e89fa.chunk.js",
@@ -10,20 +10,19 @@
     "index.html": "/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
     "static/js/2.8b3e89fa.chunk.js.LICENSE.txt": "/static/js/2.8b3e89fa.chunk.js.LICENSE.txt",
-    "static/media/cortina.80d14ebe.jpg": "/static/media/cortina.80d14ebe.jpg",
-    "static/media/impermeabilizacao.ea6935a2.jpg": "/static/media/impermeabilizacao.ea6935a2.jpg",
-    "static/media/insta.1a156e8e.png": "/static/media/insta.1a156e8e.png",
-    "static/media/living-room-2569325_1280.0b953538.jpg": "/static/media/living-room-2569325_1280.0b953538.jpg",
-    "static/media/logo.769548be.png": "/static/media/logo.769548be.png",
-    "static/media/logo2.7958c24f.png": "/static/media/logo2.7958c24f.png",
-    "static/media/recall.c8c9a1c9.jpg": "/static/media/recall.c8c9a1c9.jpg",
-    "static/media/sofa.19f7f049.jpg": "/static/media/sofa.19f7f049.jpg",
-    "static/media/tapete.7355a1ce.jpg": "/static/media/tapete.7355a1ce.jpg"
+    "static/media/cortina.f4a4755c.jpg": "/static/media/cortina.f4a4755c.jpg",
+    "static/media/impermeabilizacao.580801aa.jpg": "/static/media/impermeabilizacao.580801aa.jpg",
+    "static/media/living-room-2569325_1280.cc17d838.jpg": "/static/media/living-room-2569325_1280.cc17d838.jpg",
+    "static/media/logo.b07e76e1.png": "/static/media/logo.b07e76e1.png",
+    "static/media/logo2.777380b5.png": "/static/media/logo2.777380b5.png",
+    "static/media/recall.c989a768.jpg": "/static/media/recall.c989a768.jpg",
+    "static/media/sofa.5c3c6354.jpg": "/static/media/sofa.5c3c6354.jpg",
+    "static/media/tapete.3688f05d.jpg": "/static/media/tapete.3688f05d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.5258a62f.js",
     "static/js/2.8b3e89fa.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.5e231285.chunk.js"
+    "static/js/main.977196e0.chunk.js"
   ]
 }
