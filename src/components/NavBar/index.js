@@ -18,13 +18,15 @@ const NavBar = () => {
   return (
     <AppBar position="static" color="primary">
       <Toolbar>
-        <S.Img alt="logo" src={logo} />
+        <S.Img alt="Limpe a Seco - Higienização e impermeabilização de estofados" src={logo} />
         <S.Space />
         <S.Search>
           <div className="searchIcon">
             <SearchIcon />
           </div>
           <S.InputBaseStyled
+            aria-label="Search"
+            id="buscar"
             color="primary"
             placeholder="Buscar Serviço..."
             value={inputSearch || ""}
@@ -39,7 +41,7 @@ const NavBar = () => {
               alt="whatsapp"
               src="https://user-images.githubusercontent.com/45580434/86546051-24b9f900-bf09-11ea-8d74-119dbfd88d11.png"
             />
-          <Typography variant="h6" component="h2" align="center">
+          <Typography variant="h6" component="p" align="center">
             (27) 99531-2828
           </Typography>
         </S.WhatsAppWrapper>

@@ -1,4 +1,4 @@
-import { Typography, CardMedia, CardContent } from "@material-ui/core";
+import { Typography, CardContent } from "@material-ui/core";
 import * as S from "./styles";
 
 function Servico({ servico }) {

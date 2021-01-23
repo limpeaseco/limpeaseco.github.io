@@ -45,6 +45,9 @@ const Home = () => {
   const newSearchButton = (
     <S.ButtonWrapper>
       <Button
+        role="button"
+        aria-label="Voltar"
+        name="voltar"
         variant="contained"
         color="primary"
         onClick={() => dispatch(setInputSearch(undefined))}
@@ -66,7 +69,7 @@ const Home = () => {
             <div className="titulos">
               <Typography
                 variant="h3"
-                component="h1"
+                component="h2"
                 align="center"
                 color="textSecondary"
               >
@@ -74,7 +77,7 @@ const Home = () => {
               </Typography>
               <Typography
                 variant="h4"
-                component="h2"
+                component="h1"
                 align="center"
                 gutterBottom
                 color="textSecondary"
@@ -92,7 +95,7 @@ const Home = () => {
             <div className="text">
               <Typography
                 variant="h4"
-                component="h3"
+                component="h2"
                 align="center"
                 gutterBottom
               >
@@ -105,16 +108,18 @@ const Home = () => {
               </Typography>
               <Typography align="center">
                 Eu, Cleiton Dias, agradeço a Deus, por nos sustentar a cada dia,
-                a minha mulher Rosana, pelo apoio incondicional nesses 5
+                a minha esposa, Rosana, pelo apoio incondicional nesses 6
                 primeiros anos da empresa, aos nossos familiares, amigos,
-                parceiros, e em especial aos nossos queridos clientes.
+                parceiros, e em especial aos nossos queridos clientes de
+                Linhares e região, que acreditam que mais do que higienização de
+                estofados, nos preocupamos em cuidar da saúde de suas famílias.
               </Typography>
             </div>
           </S.RecallWrapper>
 
           <S.Servicos>
-            {servicos.map((servico) => (
-              <Servico servico={servico} />
+            {servicos.map((servico, index) => (
+              <Servico key={index} servico={servico} />
             ))}
           </S.Servicos>
         </>
